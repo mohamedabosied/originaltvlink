@@ -1,0 +1,132 @@
+/* Variables */
+:root {
+  --main-color: #2f358e;
+  --second-main-color: #ae1d4f;
+  --dark-color: rgb(18, 17, 31);
+  --transition: all 0.4s;
+  --f-family: "Noto Kufi Arabic", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: var(--f-family) !important;
+  direction: rtl;
+  overflow-x: hidden;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+button,
+select,
+input {
+  font-family: var(--f-family);
+  box-shadow: none !important;
+}
+
+/* Start Navbar */
+.navbar {
+  background: rgba(255, 255, 255, 0.699);
+}
+.navbar img {
+  position: absolute;
+  width: 63px;
+  top: -7px;
+  overflow: hidden;
+}
+.navbar .navbar-brand span {
+  color: var(--second-main-color);
+}
+.navbar .navbar-nav .nav-link {
+  color: var(--dark-color);
+  padding: 10px;
+  transition: var(--transition);
+  font-weight: 500;
+  border-bottom: solid 2px transparent;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--main-color);
+  border-bottom: solid 2px var(--main-color);
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-nav {
+    margin-top: 20px;
+  }
+}
+
+.navbar .navbar-toggler {
+  border: none;
+}
+/* End Navbar */
+
+/* Start Showcase */
+.showcase {
+  height: 600px;
+  background-image: url("../img/showcase.jpg");
+  background-size: cover;
+}
+.showcase .overlay {
+  background-color: #19062594;
+  height: 600px;
+}
+.showcase h1 {
+  padding-top: 180px;
+  direction: ltr;
+  text-shadow: 1px 2px #fff;
+}
+.showcase h1,
+.showcase p {
+  color: white;
+}
+
+.showcase-btns {
+  margin-top: 50px;
+}
+.showcase .contact-btn {
+  background-color: var(--main-color);
+  color: white;
+  border: solid transparent 2px;
+}
+.showcase .service-btn {
+  background-color: var(--second-main-color);
+  color: white;
+  border: solid transparent 2px;
+}
+.showcase .contact-btn:hover,
+.showcase .service-btn:hover {
+  border: solid white 2px;
+}
+/* End Showcase */
+
+/* Start Brands */
+.brands {
+  filter: grayscale(100%);
+  background-color: #ccc;
+  opacity: 0.9;
+}
+/* End Brands */
+
+/* Start Public Btn */
+.public-btn {
+  background-color: var(--second-main-color);
+  color: white;
+  border: solid 2px transparent;
+  transition: var(--transition);
+}
+.public-btn:hover {
+  border: solid 2px var(--dark-color);
+  color: var(--dark-color);
+}
+/* End Public Btn */
+
+/* Start Footer */
+footer {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+/* End Footer */
